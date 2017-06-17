@@ -1,0 +1,146 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  vertical-align: top;
+  display: inline-block;
+}
+
+footer {
+  vertical-align: bottom;
+  display: inline-block;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  color: orange;
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  margin: 2px;
+}
+
+h1 {
+  font-size: 2.0em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.product {
+  width: 100%;
+  display: block;
+  background: #ff512f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ff512f, #dd2475); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ff512f, #dd2475); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ff512f, #dd2475); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ff512f, #dd2475); /* Standard syntax */
+}
+
+.product h1, .product h2, .product p {
+  color: white;
+}
+
+.product h3 {
+  color: black;
+}
+
+.productInfo {
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+#menuleft {
+  text-align: left;
+  display: inline-flex;
+}
+
+#menuright {
+  text-align: right;
+  display: inline-flex;
+}
+
+#prodImage {
+  align-content: center;
+}
+
+#prodimageinner {
+  max-width: 1024px;
+  margin: 0px auto;
+  display: flex;
+  grid-template-columns: 50% 50%;
+}
+
+#prodimageinner img {
+  object-fit: contain;
+}
+
+#sneaker {
+  width: 50%;
+  padding-right: 20px;
+}
+
+#sneaker img {
+  object-fit: contain;
+}
+
+#button {
+  display: inline;
+  padding: 12px;
+  background-color: white;
+  color: #ff512f;
+  line-height: 1.4;
+ width: 10%;
+}
+
+#prodDes {
+  width: 50%;
+}
+
+#prodRec {}
+
+#prodRecInner {
+  align-content: center;
+  max-width: 1024px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#prodRecInner img {
+  width: 33%;
+}
+
+#RecHeadline {
+  text-align: center;
+  background-color: #ffeeeb;
+}
+
+#productInfoHead {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-bottom: 3px solid #dd2475;
+  color: #dd2475;
+}
+
+#productInfoHead p {
+  text-align: right;
+}
