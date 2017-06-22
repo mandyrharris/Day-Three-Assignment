@@ -6,13 +6,20 @@ body {
   margin: 0px;
 }
 
+a:link {
+  color: inherit;
+}
+
 header {
   width: 100%;
 }
 
 nav {
-  vertical-align: top;
+  /*vertical-align: top;
   display: inline-block;
+  justify-content: space-between;*/
+  height: 35px;
+  padding: 25px;
 }
 
 footer {
@@ -20,14 +27,21 @@ footer {
   display: inline-block;
   display: grid;
   grid-template-columns: 50% 50%;
+  height: 35px;
+  padding: 25px;
+}
+
+footer p {
+  margin: 0px;
 }
 
 ul {
   display: inline-block;
+  margin: 0px;
 }
 
 li {
-  color: orange;
+  color: rgb(231, 86, 45);
   display: inline-block;
   padding: 5px 5px 5px 5px;
   margin: 2px;
@@ -45,22 +59,43 @@ h3 {
   font-size: 1.1em;
 }
 
+hr {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.18);
+}
+
+#price {
+  color: #ffffff;
+  font-size: 22px;
+}
+
 .product {
   width: 100%;
   display: block;
-  background: #ff512f; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #ff512f, #dd2475); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #ff512f, #dd2475); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #ff512f, #dd2475); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #ff512f, #dd2475); /* Standard syntax */
+  background: #ff512f;
+  /* For browsers that do not support gradients */
+  background: linear-gradient(to right, #dd2475, #ff512f);
+  /* Standard syntax */
 }
 
 .product h1, .product h2, .product p {
   color: white;
 }
 
+.product p {
+line-height: 1.5;
+}
+
+.product h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
 .product h3 {
-  color: black;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .productInfo {
@@ -70,16 +105,22 @@ h3 {
 
 #menuleft {
   text-align: left;
-  display: inline-flex;
+  display: block;
+  margin-right: 100px;
+  float: left;
 }
 
 #menuright {
   text-align: right;
-  display: inline-flex;
+  display: block;
+  margin-left: 100px;
+  float: right;
 }
 
 #prodImage {
   align-content: center;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 #prodimageinner {
@@ -87,10 +128,15 @@ h3 {
   margin: 0px auto;
   display: flex;
   grid-template-columns: 50% 50%;
+  padding: 20px;
 }
 
-#prodimageinner img {
+#sneaker img {
   object-fit: contain;
+}
+
+#menuleft img {
+  float: left;
 }
 
 #sneaker {
@@ -98,24 +144,25 @@ h3 {
   padding-right: 20px;
 }
 
-#sneaker img {
-  object-fit: contain;
-}
-
 #button {
-  display: inline;
+  display: inline-block;
   padding: 12px;
   background-color: white;
   color: #ff512f;
   line-height: 1.4;
- width: 10%;
+  border-radius: 10px;
+  margin-left: 25px;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 #prodDes {
   width: 50%;
 }
 
-#prodRec {}
+#prodRec {
+  padding: 20px 0px;
+}
 
 #prodRecInner {
   align-content: center;
@@ -126,21 +173,76 @@ h3 {
 }
 
 #prodRecInner img {
-  width: 33%;
+  width: 100%;
 }
 
 #RecHeadline {
   text-align: center;
-  background-color: #ffeeeb;
+  background-color: rgb(254, 235, 239);
+  padding: 1px;
+      margin-top: 75px;
 }
 
 #productInfoHead {
   display: grid;
   grid-template-columns: 50% 50%;
-  border-bottom: 3px solid #dd2475;
-  color: #dd2475;
+  border-bottom: 1px solid #ffd4e7;
+    color: rgb(231, 86, 45);
+}
+
+#women {
+  color: rgb(179, 41, 0);
+  border-bottom: 3px solid rgb(252, 192, 191);
 }
 
 #productInfoHead p {
   text-align: right;
+}
+
+#productInfoHead h3 {
+  margin: 0px;
+  padding: 0px 0px;
+}
+
+#under {
+  padding: 17.6px 0px;
+  display: inline-block;
+  border-bottom: 2px solid #ffd4e7;
+  margin-right: 15px;
+  color: rgb(179, 41, 0);
+}
+
+#RecHeadline h1 {
+  margin: 0px;
+}
+
+#prodRecInner div {
+  padding: 15px;
+}
+
+#price sup {
+  font-size: 16px;
+}
+
+#fun {
+  margin-right: 30px;
+}
+
+#prodRecInner sup {
+  font-size: 16px;
+}
+
+#footerUnder {
+    text-decoration: underline;
+}
+
+#reviews {
+    color: rgba(0, 0, 0, 0.3);
+    /* float: right; */
+    text-align: right;
+    display: block;
+}
+
+#details p {
+    color: grey;
 }

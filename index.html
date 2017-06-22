@@ -8,20 +8,22 @@
 
 <body>
   <header class="header">
-    <img src="file:///Users/mandysmith/Desktop/Code%20Class%20June/6.12/6.12.17_A/images/logo.jpg">
     <nav>
       <div id="menuleft">
+        <img src="images/logo.jpg">
         <ul>
           <li>MEN</li>
-          <li>WOMEN</li>
+          <li id="women">WOMEN</li>
           <li>BOYS</li>
           <li>GIRLS</li>
           <li>CUSTOMIZE</li>
+        </ul>
       </div>
       <div id="menuright">
-        <li>Help</li>
-        <li>My Account</li>
-        <li><img src="file:///Users/mandysmith/Desktop/Code%20Class%20June/6.12/6.12.17_A/images/cart.jpg">Shopping Cart</li>
+        <ul>
+          <li>Help</li>
+          <li>My Account</li>
+          <li><img src="images/cart.jpg">Shopping Cart (<span id="cart">0</span>)</li>
         </ul>
       </div>
     </nav>
@@ -29,66 +31,81 @@
   <section id="prodImage" class="product">
     <section id="prodimageinner">
       <div id="sneaker">
-        <p> BACK TO ALL SHOES</p>
-        <img src="file:///Users/mandysmith/Desktop/Code%20Class%20June/6.12/6.12.17_A/images/shoe1.png"></div>
-        <section id="prodDes" class="product">
-        <h1>Quick Sneakers </h1>
-        <h3>SPRING/SUMMER 2017 </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dignissim aliquet tellus vel malesuada. Cras fringilla dolor eu eros dictum faucibus. Cras ullamcorper diam non urna convallis efficitur. Ut congue tortor ultricies, egestas ipsum
-          vehicula, rutrum augue. Integer bibendum neque sed enim fringilla facilisis. Nam volutpat quis erat non elementum. Read the Reviews.
-          <br> $120.00 </p>
-        <div id="button">BUY NOW!</div>
+        <p>&#8592; BACK TO ALL SHOES</p>
+        <img src="images/shoe1.png"></div>
+      <section id="prodDes">
+        <h1>Quick Sneakers</h1>
+        <h3>SPRING/SUMMER 2017</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dignissim aliquet tellus vel malesuada. Cras fringilla dolor eu eros dictum faucibus. Cras ullamcorper diam non urna convallis efficitur. <span id="reviews">Read the Reviews.</span></p>
+          <hr>
+          <div id="price">
+          $120<sup>00</sup>
+          <a href="#" onclick="return false;" id="button">BUY NOW!</a>
+        </div>
       </section>
-    </div>
+      </div>
+    </section>
   </section>
-</section>
   <section class="productInfo">
     <div id="productInfoHead">
-    <h3>Product Details                    Size &amp; Fit</h3>
-  <p>Reviews</div>
-      <div>
-    <h1>Exciting Topic</h1>
-    <p>Content Here</p>
-    <h1>Find Your Shoe Size &amp; Fit</h1>
-    <p>Content Here</p>
-    <h1>What Our Customers are Saying</h1>
-    <p>Don' t take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed in your purchase.</p></div>
+      <h3><span id="under">Product Details</span> Size &amp; Fit</h3>
+      <p>Reviews &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+    </div>
+    </div>
+    <div id="details">
+      <h2>Exciting Topic</h2>
+      <p>Content Here</p>
+      <h2>Find Your Shoe Size &amp; Fit</h2>
+      <p>Content Here</p>
+      <h2>What Our Customers are Saying</h2>
+      <p>Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed in your purchase.</p>
+    </div>
   </section>
   <section id="RecHeadline">
-    <h1>Shop Recommended Shoes</h1>
+    <h2>Shop Recommended Shoes</h2>
   </section>
   <section id="prodRec" class="product">
     <div id="prodRecInner">
-      <div><img src="file:///Users/mandysmith/Desktop/Code%20Class%20June/6.12/6.12.17_A/images/shoe2.png">
-        <h2>Funny Sneakers</h2>
+      <div><img src="images/shoe2.png">
+        <h2><span id= "fun">Funny Sneakers</span> $120<sup>00</sup></h2>
         <h3>SPRING/SUMMER 2017 </h3>
-        <p>$120.00</p>
       </div>
-      <div><img src="file:///Users/mandysmith/Desktop/Code%20Class%20June/6.12/6.12.17_A/images/shoe3.png">
-        <h2>Nimble Sneakers</h2>
-        <h3>SPRING/SUMMER 2017 </h3>
-        <p>$120.00</p>
+      <div><img src="images/shoe3.png">
+<h2><span id= "fun">Nimble Sneakers</span> $120<sup>00</sup></h2>
+        <h3>SPRING/SUMMER 2017</h3>
       </div>
-      <div><img src="file:///Users/mandysmith/Desktop/Code%20Class%20June/6.12/6.12.17_A/images/shoe4.png">
-        <h2>Cute Sneakers</h2>
+      <div><img src="images/shoe4.png">
+        <h2><span id= "fun">Cute Sneakers</span> $120<sup>00</sup></h2>
         <h3>SPRING/SUMMER 2017 </h3>
-        <p>$120.00</p>
       </div>
     </div>
   </section>
   <footer class="footer">
     <div id="menuleft">
-      <img src="file:///Users/mandysmith/Desktop/Code%20Class%20June/6.12/6.12.17_A/images/logo.jpg">
+      <img src="images/logo.jpg">
       <li>Men</li>
-      <li>Women</li>
+      <li id="women">Women</li>
       <li>Boys</li>
       <li>Girls</li>
       <li>Customize</li>
     </div>
     <div id="menuright">
-      <p>Shipping | Terms &amp; Conditions | &copy; Copyright 2017. Sneaker Shop, LLC</p>
+      <p><span id="footerUnder">Shipping</span> | <span id="footerUnder">Terms &amp; Conditions</span> | &copy; Copyright 2017. Sneaker Shop, LLC</p>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var cartNumber = 0;
+    jQuery('#button').click(function() {
+      cartNumber++;
+      jQuery('#cart').html(cartNumber);
+      jQuery('#button').html('Added to Cart!');
+      setTimeout(function() {
+        jQuery('#button').html('BUY NOW!');
+      }, 1500);
+    });
+  </script>
 </body>
 
 </html>
